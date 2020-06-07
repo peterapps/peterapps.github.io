@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css","NavBar.css"],"names":[],"mappings":"AAGA,MACE,YACF,CCLA,uBACE,eACF","file":"main.7340fc1c.chunk.css","sourcesContent":[".App {\n}\n\n.Page {\n  padding: 16px;\n}\n",".navbar-social-media a {\n  margin-left: 8px;\n}\n"]}
