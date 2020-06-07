@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
 import "../css/NavBar.css";
@@ -9,16 +10,30 @@ export default function NavBar(props) {
 
   return (
     <Navbar expand="lg" style={{ backgroundColor: backgroundColor }}>
-      <Navbar.Brand href="/#/">Linder</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">
+        Linder
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/work">Work</Nav.Link>
-          <Nav.Link href="/films">Films</Nav.Link>
-          <Nav.Link href="/tools">Tools</Nav.Link>
-          <Nav.Link href="/games">Games</Nav.Link>
+          <Nav.Link as={Link} to="/">
+            Home
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about">
+            About
+          </Nav.Link>
+          <Nav.Link as={Link} to="/work">
+            Work
+          </Nav.Link>
+          <Nav.Link as={Link} to="/films">
+            Films
+          </Nav.Link>
+          <Nav.Link as={Link} to="/tools">
+            Tools
+          </Nav.Link>
+          <Nav.Link as={Link} to="/games">
+            Games
+          </Nav.Link>
         </Nav>
         <Nav className="ml-auto navbar-social-media">
           <MySocialMedia
