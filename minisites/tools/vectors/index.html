@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter's Vector Addition</title>
+	<style>
+body {
+	font-family: sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+
+input[type=number] {
+	width: 3em;
+}
+
+input[type=submit] {
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+canvas {
+	background: white;
+	border: 2px solid black;
+}
+
+tr.r {
+	font-weight: bold;
+	border-top: 2px solid black;
+}
+
+thead tr {
+	border-bottom: 2px solid black;
+}
+
+	</style>
+	<script type="text/javascript" src="./draw.js"></script>
+</head>
+<body>
+<h1>
+Peter's Vector Addition
+</h1>
+<!-- Peter's Apps -->
+<p>Check out more of <a href="/">Peter's Apps</a>.</p>
+<!-- End Peter's Apps -->
+<canvas width="300" height="300" id="canvas"></canvas>
+<form action="" id="form">
+	<table>
+		<thead>
+			<tr>
+				<th>Vector</th>
+				<th>Magnitude</th>
+				<th>Angle (&deg;)</th>
+				<th>x-component</th>
+				<th>y-component</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="a">
+				<td>A</td>
+				<td class="mag">
+					<input type="number" value="0" id="a-mag" />
+				</td>
+				<td class="angle">
+					<input type="number" value="0" id="a-dir" />
+				</td>
+				<td class="xcom"></td>
+				<td class="ycom"></td>
+			</tr>
+			<tr class="b">
+				<td>B</td>
+				<td class="mag">
+					<input type="number" value="0" id="b-mag" />
+				</td>
+				<td class="angle">
+					<input type="number" value="0" id="b-dir" />
+				</td>
+				<td class="xcom"></td>
+				<td class="ycom"></td>
+			</tr>
+			<tr class="r">
+				<th>R</th>
+				<td class="mag"></td>
+				<td class="angle"></td>
+				<td class="xcom"></td>
+				<td class="ycom"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td id="submit" colspan="5">
+					<input type="submit" value="Calculate" />
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</form>
+<p>
+Remember that for a vector <b>V</b> with an angle <b>&theta;</b>,
+the x-component <b>V<sub>x</sub> = V cos(&theta;)</b>
+and the y-component <b>V<sub>y</sub> = V sin(&theta;)</b>
+</p>
+</body>
+</html>
