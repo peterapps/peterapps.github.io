@@ -8,8 +8,7 @@ import NotFound from "./pages/NotFound.js";
 
 import About from "./pages/About.js";
 import Films from "./pages/Films.js";
-import Games from "./pages/Games.js";
-import Tools from "./pages/Tools.js";
+import Minisites from "./pages/Minisites.js";
 import Work from "./pages/Work.js";
 import EpisodeView from "./pages/EpisodeView.js";
 import SeriesView from "./pages/SeriesView.js";
@@ -23,7 +22,6 @@ function App() {
           <Route exact path="/" component={Home} />
 
           <Route exact path="/about" component={About} />
-          <Route exact path="/games" component={Games} />
           <Route exact path="/films" component={Films} />
           <Route
             exact
@@ -31,7 +29,7 @@ function App() {
             component={EpisodeView}
           />
           <Route exact path="/films/:seriesPath/" component={SeriesView} />
-          <Route exact path="/tools" component={Tools} />
+          <Route exact path="/minisites" component={Minisites} />
           <Route exact path="/work" component={Work} />
 
           <Route component={NotFound} />

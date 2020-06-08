@@ -33,11 +33,8 @@ export default function NavBar(props) {
           <Nav.Link as={Link} to="/films">
             Films
           </Nav.Link>
-          <Nav.Link as={Link} to="/tools">
-            Tools
-          </Nav.Link>
-          <Nav.Link as={Link} to="/games">
-            Games
+          <Nav.Link as={Link} to="/minisites">
+            Minisites
           </Nav.Link>
         </Nav>
         <Nav className="ml-auto navbar-social-media">
