@@ -11,6 +11,8 @@ import Films from "./pages/Films.js";
 import Games from "./pages/Games.js";
 import Tools from "./pages/Tools.js";
 import Work from "./pages/Work.js";
+import EpisodeView from "./pages/EpisodeView.js";
+import SeriesView from "./pages/SeriesView.js";
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/games" component={Games} />
           <Route exact path="/films" component={Films} />
+          <Route
+            exact
+            path="/films/:seriesPath/:episodeNum"
+            component={EpisodeView}
+          />
+          <Route exact path="/films/:seriesPath/" component={SeriesView} />
           <Route exact path="/tools" component={Tools} />
           <Route exact path="/work" component={Work} />
 

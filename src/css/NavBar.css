@@ -1,3 +1,11 @@
 .navbar-social-media a {
   margin-left: 8px;
 }
+
+.navbar.navbar-dark {
+  background-color: #115a90;
+}
+
+img.navbar-logo {
+  margin-right: 5px;
+}

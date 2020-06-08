@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  .card-preview-video img {
+    display: none;
+  }
+  .episode-row > div {
+    margin-bottom: 1em;
+  }
+}
+
+.episode-row {
+  margin-bottom: 1em;
+}
+
+.card-preview-video.no-video .card-title {
+  color: #6c757d;
+}
+
+.film-series-card img,
+.film-episode-card img {
+  transition: 0.3s ease;
+}
+
+.film-series-card img:hover,
+.film-episode-card img:hover {
+  opacity: 0.7;
+}
