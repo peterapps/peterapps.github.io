@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/films" component={Films} />
           <Route
             exact
-            path="/films/:seriesPath/:episodeNum"
+            path="/films/:seriesPath/:episodePath"
             component={EpisodeView}
           />
           <Route exact path="/films/:seriesPath/" component={SeriesView} />

@@ -44,7 +44,7 @@ export default function(props) {
       <Helmet>
         <title>Minisites | Peter Apps</title>
       </Helmet>
-      <h1>Minisite</h1>
+      <h1>Minisites</h1>
       <p>
         Long before this site existed, I had a variety of standalone web-based
         games and tools, listed below.

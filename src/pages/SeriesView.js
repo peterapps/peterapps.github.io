@@ -8,6 +8,7 @@ import "../css/Films.css";
 import filmsList from "../globals/filmsList.js";
 import { loadEpisodesThumbnails } from "../actions/index.js";
 import NotFound from "./NotFound.js";
+import Loader from "../components/Loader.js";
 
 export default function(props) {
   const { seriesPath } = useParams();
@@ -35,38 +36,43 @@ export default function(props) {
       </h1>
       <p>{series.description}</p>
       <h3>{series.episodes.length} Episodes</h3>
-      {series.episodes.map((episode, index) => (
-        <Card className="mb-3 film-episode-card" key={index}>
-          <Row noGutters={true}>
-            <Col md={3}>
-              <Card.Link as={Link} to={"/films/" + seriesPath + "/" + index}>
-                <Card.Img src={thumbnails && thumbnails[index]} />
-              </Card.Link>
-            </Col>
-            <Col md={9}>
-              <Card.Body>
-                <Card.Title>
-                  <Card.Link
-                    as={Link}
-                    to={"/films/" + seriesPath + "/" + index}
-                  >
-                    {episode.title}
-                  </Card.Link>
-                </Card.Title>
+      {!thumbnailsLoaded && <Loader />}
+      {thumbnailsLoaded &&
+        series.episodes.map((episode, index) => (
+          <Card className="mb-3 film-episode-card" key={index}>
+            <Row noGutters={true}>
+              <Col md={3}>
+                <Card.Link
+                  as={Link}
+                  to={"/films/" + seriesPath + "/" + episode.path}
+                >
+                  <Card.Img src={thumbnails && thumbnails[index]} />
+                </Card.Link>
+              </Col>
+              <Col md={9}>
+                <Card.Body>
+                  <Card.Title>
+                    <Card.Link
+                      as={Link}
+                      to={"/films/" + seriesPath + "/" + episode.path}
+                    >
+                      {episode.title}
+                    </Card.Link>
+                  </Card.Title>
 
-                <Card.Text className="episode-card-description">
-                  {metadata && metadata[index] && metadata[index].description}
-                </Card.Text>
-                <Card.Text>
-                  <small className="text-muted">
-                    {metadata && metadata[index] && metadata[index].date}
-                  </small>
-                </Card.Text>
-              </Card.Body>
-            </Col>
-          </Row>
-        </Card>
-      ))}
+                  <Card.Text className="episode-card-description">
+                    {metadata && metadata[index] && metadata[index].description}
+                  </Card.Text>
+                  <Card.Text>
+                    <small className="text-muted">
+                      {metadata && metadata[index] && metadata[index].date}
+                    </small>
+                  </Card.Text>
+                </Card.Body>
+              </Col>
+            </Row>
+          </Card>
+        ))}
     </>
   );
 }

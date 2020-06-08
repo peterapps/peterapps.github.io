@@ -7,6 +7,7 @@ import { Card, CardColumns } from "react-bootstrap";
 import "../css/Films.css";
 import filmsList from "../globals/filmsList.js";
 import { loadSeriesThumbnails } from "../actions/index.js";
+import Loader from "../components/Loader.js";
 
 export default function(props) {
   const dispatch = useDispatch();
@@ -29,22 +30,25 @@ export default function(props) {
         editor, writer, and actor.
       </p>
       <h3>Series</h3>
-      <CardColumns>
-        {filmsList.series.map((series, index) => (
-          <Card key={series.path} className="film-series-card">
-            <Card.Link as={Link} to={"/films/" + series.path + "/"}>
-              <Card.Img variant="top" src={thumbnails[index]} />
-            </Card.Link>
-            <Card.Body>
-              <Card.Title>{series.title}</Card.Title>
-              <Card.Text>{series.description}</Card.Text>
+      {!thumbnailsLoaded && <Loader />}
+      {thumbnailsLoaded && (
+        <CardColumns>
+          {filmsList.series.map((series, index) => (
+            <Card key={series.path} className="film-series-card">
               <Card.Link as={Link} to={"/films/" + series.path + "/"}>
-                View {series.episodes.length} episodes
+                <Card.Img variant="top" src={thumbnails[index]} />
               </Card.Link>
-            </Card.Body>
-          </Card>
-        ))}
-      </CardColumns>
+              <Card.Body>
+                <Card.Title>{series.title}</Card.Title>
+                <Card.Text>{series.description}</Card.Text>
+                <Card.Link as={Link} to={"/films/" + series.path + "/"}>
+                  View {series.episodes.length} episodes
+                </Card.Link>
+              </Card.Body>
+            </Card>
+          ))}
+        </CardColumns>
+      )}
     </>
   );
 }

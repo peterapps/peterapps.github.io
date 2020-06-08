@@ -1,0 +1,9 @@
+.loader-div {
+  display: flex;
+  align-items: center;
+}
+
+.loader-div span {
+  margin-left: 0.5em;
+  font-size: 1.25rem;
+}

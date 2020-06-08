@@ -11,19 +11,20 @@ import { loadEpisodesThumbnails } from "../actions/index.js";
 import NotFound from "./NotFound.js";
 
 export default function(props) {
-  const { seriesPath, episodeNum } = useParams();
-  const episodeIndex = parseInt(episodeNum);
+  const { seriesPath, episodePath } = useParams();
   const dispatch = useDispatch();
 
   const series = filmsList.series.find(x => x.path === seriesPath);
-  if (!series || episodeIndex < 0 || episodeIndex >= series.episodes.length)
-    return <NotFound />;
-  const episode = series.episodes[episodeIndex] || { title: "" };
+  if (!series) return <NotFound />;
+  const episodeIndex = series.episodes.findIndex(x => x.path === episodePath);
+  if (episodeIndex === -1) return <NotFound />;
+  const episode = series.episodes[episodeIndex];
 
   const thumbnailsLoaded = useSelector(
     state => state.episodesLoaded[seriesPath]
   );
   const thumbnails = useSelector(state => state.episodesThumbnails[seriesPath]);
+  const metadata = useSelector(state => state.episodesMetadata[seriesPath]);
 
   if (!thumbnailsLoaded)
     loadEpisodesThumbnails(dispatch, seriesPath, series.episodes);
@@ -52,7 +53,14 @@ export default function(props) {
                 <Card.Title>
                   {series.episodes[episodeIndex - 1].title}
                 </Card.Title>
-                <Link to={"/films/" + seriesPath + "/" + (episodeIndex - 1)}>
+                <Link
+                  to={
+                    "/films/" +
+                    seriesPath +
+                    "/" +
+                    series.episodes[episodeIndex - 1].path
+                  }
+                >
                   Go to previous episode
                 </Link>
               </Card.Body>
@@ -81,7 +89,14 @@ export default function(props) {
                 <Card.Title>
                   {series.episodes[episodeIndex + 1].title}
                 </Card.Title>
-                <Link to={"/films/" + seriesPath + "/" + (episodeIndex + 1)}>
+                <Link
+                  to={
+                    "/films/" +
+                    seriesPath +
+                    "/" +
+                    series.episodes[episodeIndex + 1].path
+                  }
+                >
                   Go to next episode
                 </Link>
               </Card.Body>
@@ -103,8 +118,16 @@ export default function(props) {
           )}
         </Col>
       </Row>
-      <p>Published: {episode.date}</p>
-      <p>Description: {episode.description}</p>
+      <p>
+        Published:{" "}
+        {metadata && metadata[episodeIndex] && metadata[episodeIndex].date}
+      </p>
+      <p>
+        Description:{" "}
+        {metadata &&
+          metadata[episodeIndex] &&
+          metadata[episodeIndex].description}
+      </p>
     </>
   );
 }
