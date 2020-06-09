@@ -40,7 +40,7 @@ const TheStoopidMuvy = {
       title: "S1E3: C. Zin 3",
       url: "https://vimeo.com/179644245",
       path: "s1e3",
-      date: "Summer, 2010",
+      date: "Jul 12, 2011",
       description:
         'In the conclusion to season 1, C. Zin 3 guest stars as a "friend".'
     },
@@ -48,14 +48,14 @@ const TheStoopidMuvy = {
       title: "S1E2: Season, Too",
       url: "https://vimeo.com/179133231",
       path: "s1e2",
-      date: "Summer, 2010",
+      date: "Jun 26, 2011",
       description: "Back and stupider than ever!"
     },
     {
       title: "S1E1: Season Won",
       url: "https://vimeo.com/179133049",
       path: "s1e1",
-      date: "Summer, 2010",
+      date: "Jun 25, 2011",
       description: "Introducing a movie that couldn't get any stupiderer."
     }
   ]
@@ -260,13 +260,13 @@ const WillyOLaughlin = {
       title: "S1E2",
       url: "https://vimeo.com/211041428",
       path: "s1e2",
-      date: "2011?"
+      date: "August, 2011"
     },
     {
       title: "S1E3",
       url: "https://vimeo.com/211041491",
       path: "s1e3",
-      date: "2012?"
+      date: "August, 2012"
     }
   ]
 };
@@ -386,7 +386,8 @@ const MiscWithAlex = {
     {
       title: "Chip and Drip",
       url: "https://vimeo.com/211044247",
-      path: "chip-and-drip"
+      path: "chip-and-drip",
+      date: "Jul 23, 2011"
     },
     {
       title: "The Bionic Heel Man",
