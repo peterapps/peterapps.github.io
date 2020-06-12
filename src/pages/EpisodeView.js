@@ -50,20 +50,21 @@ export default function(props) {
         <Col md="6">
           <ReactPlayer url={episode.url} width="100%" controls={true} />
         </Col>
+
         <Col md="3">
-          {episodeIndex > 0 && thumbnails ? (
+          {episodeIndex < series.episodes.length - 1 && thumbnails ? (
             <Card className="card-preview-video">
-              <Card.Img variant="top" src={thumbnails[episodeIndex - 1]} />
+              <Card.Img variant="top" src={thumbnails[episodeIndex + 1]} />
               <Card.Body>
                 <Card.Title>
-                  {series.episodes[episodeIndex - 1].title}
+                  {series.episodes[episodeIndex + 1].title}
                 </Card.Title>
                 <Link
                   to={
                     "/films/" +
                     seriesPath +
                     "/" +
-                    series.episodes[episodeIndex - 1].path
+                    series.episodes[episodeIndex + 1].path
                   }
                 >
                   Go to previous episode
@@ -87,19 +88,19 @@ export default function(props) {
           )}
         </Col>
         <Col md="3">
-          {episodeIndex < series.episodes.length - 1 && thumbnails ? (
+          {episodeIndex > 0 && thumbnails ? (
             <Card className="card-preview-video">
-              <Card.Img variant="top" src={thumbnails[episodeIndex + 1]} />
+              <Card.Img variant="top" src={thumbnails[episodeIndex - 1]} />
               <Card.Body>
                 <Card.Title>
-                  {series.episodes[episodeIndex + 1].title}
+                  {series.episodes[episodeIndex - 1].title}
                 </Card.Title>
                 <Link
                   to={
                     "/films/" +
                     seriesPath +
                     "/" +
-                    series.episodes[episodeIndex + 1].path
+                    series.episodes[episodeIndex - 1].path
                   }
                 >
                   Go to next episode

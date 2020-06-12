@@ -26,9 +26,9 @@ export default function(props) {
             <h1>Films</h1>
             <p>
               For the past 10 years, one of my most entertaining off-and-on
-              hobbies is filmmaking. I really should do it more. I've made films
-              for fun, for school, with friends, and even with enemies, but it's
-              (almost) always a good time.
+              hobbies has been filmmaking. I really should do it more. I've made
+              films for fun, for school, with friends, and even with enemies,
+              but it's (almost) always a good time.
             </p>
             <p>
               <Link to="/films/">
