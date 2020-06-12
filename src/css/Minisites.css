@@ -4,3 +4,9 @@
   padding: 15px;
   margin-bottom: 1em;
 }
+
+@media only screen and (max-width: 575px) {
+  .minisite-tab-container .tab-pane {
+    margin-top: 15px;
+  }
+}

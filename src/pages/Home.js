@@ -71,7 +71,7 @@ export default function(props) {
             <h1>My Work</h1>
             <p>This page is coming soon. Well, soon-ish.</p>
             <p>
-              <Link to="/minisites/">
+              <Link to="/work/">
                 <Button variant="primary" size="lg">
                   Explore my work
                 </Button>

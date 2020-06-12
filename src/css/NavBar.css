@@ -8,4 +8,6 @@
 
 img.navbar-logo {
   margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 6px;
 }

@@ -1,5 +1,5 @@
 img.home-carousel {
-  filter: saturate(0.5) blur(2px) brightness(0.6);
+  filter: saturate(0.5) blur(2px) brightness(0.5);
 }
 
 .carousel-item {

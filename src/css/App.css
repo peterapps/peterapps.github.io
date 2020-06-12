@@ -1,4 +1,8 @@
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Page {
@@ -7,4 +11,6 @@
 
 .Body {
   background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
 }

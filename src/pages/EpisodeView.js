@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
 import "../css/Films.css";
@@ -36,11 +36,16 @@ export default function(props) {
           {episode.title} | {series.title} | Films | Peter Apps
         </title>
       </Helmet>
-      <h1>
-        <Link to="/films">Films</Link> &gt;{" "}
-        <Link to={"/films/" + seriesPath + "/"}>{series.title}</Link> &gt;{" "}
-        {episode.title}
-      </h1>
+      <Breadcrumb>
+        <Link to="/films/" className="breadcrumb-item">
+          Films
+        </Link>
+        <Link to={"/films/" + seriesPath + "/"} className="breadcrumb-item">
+          {series.title}
+        </Link>
+        <Breadcrumb.Item active>{episode.title}</Breadcrumb.Item>
+      </Breadcrumb>
+      <h1>{episode.title}</h1>
       <Row className="episode-row">
         <Col md="6">
           <ReactPlayer url={episode.url} width="100%" controls={true} />

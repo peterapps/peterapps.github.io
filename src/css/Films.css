@@ -24,3 +24,7 @@
 .film-episode-card img:hover {
   opacity: 0.7;
 }
+
+ol.breadcrumb {
+  background-color: #cbe9ff;
+}
