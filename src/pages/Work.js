@@ -5,9 +5,9 @@ export default function(props) {
   return (
     <>
       <Helmet>
-        <title>Work page</title>
+        <title>My Work | Peter Apps</title>
       </Helmet>
-      <p>Hello to my work</p>
+      <p>This page is coming soon. Well, soon-ish.</p>
     </>
   );
 }

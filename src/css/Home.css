@@ -1,0 +1,13 @@
+img.home-carousel {
+  filter: saturate(0.5) blur(2px) brightness(0.6);
+}
+
+.carousel-item {
+  background-color: #2d2d2d;
+}
+
+@media only screen and (max-width: 768px) {
+  img.home-carousel {
+    min-height: 400px;
+  }
+}

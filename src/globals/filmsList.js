@@ -387,12 +387,16 @@ const MiscWithAlex = {
       title: "Chip and Drip",
       url: "https://vimeo.com/211044247",
       path: "chip-and-drip",
-      date: "Jul 23, 2011"
+      date: "Jul 23, 2011",
+      description:
+        "The exciting adventures of Chip, a chocolate chip cookie, and Drip, an ice cream cone."
     },
     {
       title: "The Bionic Heel Man",
       url: "https://vimeo.com/289168624",
-      path: "bionic-heel-man"
+      path: "bionic-heel-man",
+      date: "August, 2014",
+      description: "Alex has a boo-boo on his heel and gets a little tune-up."
     },
     {
       title: "The Alex Observation Vlog",

@@ -24,17 +24,14 @@ export default function NavBar(props) {
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/about">
-            About
-          </Nav.Link>
-          <Nav.Link as={Link} to="/work">
-            Work
-          </Nav.Link>
           <Nav.Link as={Link} to="/films">
             Films
           </Nav.Link>
           <Nav.Link as={Link} to="/minisites">
             Minisites
+          </Nav.Link>
+          <Nav.Link as={Link} to="/work">
+            My Work
           </Nav.Link>
         </Nav>
         <Nav className="ml-auto navbar-social-media">

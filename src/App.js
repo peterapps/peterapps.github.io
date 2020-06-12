@@ -6,7 +6,6 @@ import NavBar from "./components/NavBar.js";
 import Home from "./pages/Home.js";
 import NotFound from "./pages/NotFound.js";
 
-import About from "./pages/About.js";
 import Films from "./pages/Films.js";
 import Minisites from "./pages/Minisites.js";
 import Work from "./pages/Work.js";
@@ -21,7 +20,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
 
-          <Route exact path="/about" component={About} />
           <Route exact path="/films" component={Films} />
           <Route
             exact
