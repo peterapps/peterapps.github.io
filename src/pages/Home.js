@@ -71,7 +71,7 @@ export default function(props) {
             <h1>About</h1>
             <p>See a brief bio about me, Peter.</p>
             <p>
-              <Link to="/work/">
+              <Link to="/about/">
                 <Button variant="primary" size="lg">
                   About Me
                 </Button>
