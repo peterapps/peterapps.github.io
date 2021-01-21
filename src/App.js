@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound.js";
 
 import Films from "./pages/Films.js";
 import Minisites from "./pages/Minisites.js";
-import Work from "./pages/Work.js";
+import About from "./pages/About.js";
 import EpisodeView from "./pages/EpisodeView.js";
 import SeriesView from "./pages/SeriesView.js";
 
@@ -29,7 +29,7 @@ function App() {
           />
           <Route exact path="/films/:seriesPath/" component={SeriesView} />
           <Route exact path="/minisites" component={Minisites} />
-          <Route exact path="/work" component={Work} />
+          <Route exact path="/about" component={About} />
 
           <Route component={NotFound} />
         </Switch>

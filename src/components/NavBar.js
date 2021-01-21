@@ -29,8 +29,8 @@ export default function NavBar(props) {
           <Nav.Link as={Link} to="/minisites">
             Minisites
           </Nav.Link>
-          <Nav.Link as={Link} to="/work">
-            My Work
+          <Nav.Link as={Link} to="/about">
+            About
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

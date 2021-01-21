@@ -5,7 +5,7 @@ import { Carousel, Button } from "react-bootstrap";
 
 import imgFilms from "../img/carousel-films.jpg";
 import imgSites from "../img/carousel-sites.jpg";
-import imgWork from "../img/carousel-work.jpg";
+import imgAbout from "../img/carousel-about.jpg";
 
 import "../css/Home.css";
 
@@ -64,16 +64,16 @@ export default function(props) {
         <Carousel.Item>
           <img
             className="d-block w-100 home-carousel"
-            src={imgWork}
-            alt="My Work"
+            src={imgAbout}
+            alt="About"
           />
           <Carousel.Caption className="text-left">
-            <h1>My Work</h1>
-            <p>This page is coming soon. Well, soon-ish.</p>
+            <h1>About</h1>
+            <p>See a brief bio about me, Peter.</p>
             <p>
               <Link to="/work/">
                 <Button variant="primary" size="lg">
-                  Explore my work
+                  About Me
                 </Button>
               </Link>
             </p>
