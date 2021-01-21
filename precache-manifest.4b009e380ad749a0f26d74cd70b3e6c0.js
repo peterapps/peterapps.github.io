@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e47156c58fadb47492fe60b8b2ef5f7d",
+    "revision": "78e66dc67e554af8d2c2ce349a6c7a8c",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/13.829c9cb5.chunk.css"
   },
   {
-    "revision": "5c92384630f8819bb56e",
+    "revision": "712c38a50e932590bc66",
     "url": "/static/css/main.5003af6c.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/14.23414c80.chunk.js"
   },
   {
-    "revision": "5c92384630f8819bb56e",
-    "url": "/static/js/main.0f71206c.chunk.js"
+    "revision": "712c38a50e932590bc66",
+    "url": "/static/js/main.f340e867.chunk.js"
   },
   {
     "revision": "2278881e21227622b676",
@@ -76,15 +76,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/runtime-main.34badfb6.js"
   },
   {
+    "revision": "3cb09480490db0c1f011f8589f6f747b",
+    "url": "/static/media/carousel-about.3cb09480.jpg"
+  },
+  {
     "revision": "56c41b32dd92dabf419051b754ed3782",
     "url": "/static/media/carousel-films.56c41b32.jpg"
   },
   {
     "revision": "bc5b965a2b1f7fd149fa2b7fbb8c21cb",
     "url": "/static/media/carousel-sites.bc5b965a.jpg"
-  },
-  {
-    "revision": "cd1e4606f8cdd16eca7f412dfaf9fd46",
-    "url": "/static/media/carousel-work.cd1e4606.jpg"
   }
 ]);
