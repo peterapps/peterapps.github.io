@@ -20,17 +20,7 @@ export default function Footer(props) {
         <MySocialMedia
           title="linkedin"
           icon={faLinkedin}
-          url="https://www.linkedin.com/in/peter-linder-aa648b181/"
-        />
-        <MySocialMedia
-          title="github"
-          icon={faGithub}
-          url="http://github.com/peterapps/"
-        />
-        <MySocialMedia
-          title="youtube"
-          icon={faYoutube}
-          url="https://www.youtube.com/channel/UCMZRd32HnEHTn6YHyyjQ8nQ"
+          url="https://www.linkedin.com/in/peter-a-linder/"
         />
         <MySocialMedia
           title="vimeo"
