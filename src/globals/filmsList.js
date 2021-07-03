@@ -68,6 +68,15 @@ const CloudyDayStudios = {
     'A collection of films created by me and my high school friends, most prominently the legendary Ruiqi "Ricky" Wang. For some reason we called ourselves Cloudy Day Studios.',
   episodes: [
     {
+      title: "Detective Ricky - Teaser 1",
+      url: "https://www.youtube.com/watch?v=5KrDG1h1-v0",
+      path: "detective-ricky-teaser-1",
+      date: "June 30, 2021",
+      description:
+        "The first teaser trailer for Detective Ricky, an upcoming short film.",
+      sd: true
+    },
+    {
       title: "Rockney IV",
       url: "https://www.youtube.com/watch?v=qy91wyWtbPg",
       path: "rockney-iv",
@@ -113,6 +122,13 @@ const CreationsWithZach = {
     "A series of my friend Zach creating repulsive concoctions involving energy drinks and snacks.",
   episodes: [
     {
+      title: "Potted Plant",
+      url: "https://www.youtube.com/watch?v=CnJsXXQIoRA",
+      path: "potted-plant",
+      date: "June 18, 2021",
+      description: "Potted plants not included. Guest starring Vinay Balan."
+    },
+    {
       title: "Energy Mac",
       url: "https://www.youtube.com/watch?v=go3HQzTjnp0",
       path: "energy-mac",
@@ -132,14 +148,16 @@ const CreationsWithZach = {
       path: "crappy-cocoa",
       date: "Jul 11, 2017",
       description:
-        "One layer of chocolate is okay, two layers is good... but three layers is great!"
+        "One layer of chocolate is okay, two layers is good... but three layers is great!",
+      sd: true
     },
     {
       title: "Cream Bull + SPECIAL GUESTS",
       url: "https://www.youtube.com/watch?v=7EM_NTdVaG8",
       path: "cream-bull",
       date: "Jun 29, 2017",
-      description: "Milkshakes are so last year... but this'll add a kick!"
+      description: "Milkshakes are so last year... but this'll add a kick!",
+      sd: true
     },
     {
       title: "Juicy Creeper",
@@ -147,7 +165,8 @@ const CreationsWithZach = {
       path: "juicy-creeper",
       date: "Jun 28, 2017",
       description:
-        "This monster just got a little bit explosive... with a secret ingredient!"
+        "This monster just got a little bit explosive... with a secret ingredient!",
+      sd: true
     },
     {
       title: "Grassy Grape",
@@ -455,14 +474,16 @@ const SpanishProjects = {
       url: "https://www.youtube.com/watch?v=FDhqYne9C-w",
       path: "luche",
       date: "Jun 3, 2018",
-      description: "A Spanish music video to the tune of HYFR by Drake."
+      description: "A Spanish music video to the tune of HYFR by Drake.",
+      sd: true
     },
     {
       title: "¡Luche! - BTS + Bloopers",
       url: "https://www.youtube.com/watch?v=FEJmVEsG-Mw",
       path: "luche-bloopers",
       date: "Jun 3, 2018",
-      description: "BTS and bloopers for our Spanish music video."
+      description: "BTS and bloopers for our Spanish music video.",
+      sd: true
     },
     {
       title: "Leche Frita",
@@ -493,7 +514,8 @@ const SchoolProjects = {
       url: "https://www.youtube.com/watch?v=yjjIo_wh1uI",
       path: "xtreme-inertia-preview",
       date: "Oct 22, 2017",
-      description: "A trailer for a thrilling demonstration of inertia."
+      description: "A trailer for a thrilling demonstration of inertia.",
+      sd: true
     },
 
     {

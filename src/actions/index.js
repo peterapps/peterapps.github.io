@@ -8,12 +8,15 @@ export function loadSeriesThumbnails(dispatch, allSeries) {
   const fetchData = async () => {
     let thumbnails = Array(allSeries.length);
     for (let i = 0; i < allSeries.length; ++i) {
-      const url = allSeries[i].episodes[0].url;
+      const episode = allSeries[i].episodes[0];
+      const url = episode.url;
       if (url.includes("youtube.com/")) {
         // Get YouTube ID from URL
         const id = url.split("v=")[1];
         thumbnails[i] =
-          "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
+          "https://img.youtube.com/vi/" +
+          id +
+          (episode.sd ? "/mqdefault.jpg" : "/maxresdefault.jpg");
       } else {
         const result = await axios.get(
           "https://vimeo.com/api/oembed.json?url=" + url
@@ -40,8 +43,9 @@ export function loadEpisodesThumbnails(dispatch, series, episodes) {
         // Get YouTube ID from URL
         const id = url.split("v=")[1];
         thumbnails[i] =
-          //"https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
-          "https://i.ytimg.com/vi/" + id + "/maxresdefault.jpg";
+          "https://img.youtube.com/vi/" +
+          id +
+          (episodes[i].sd ? "/mqdefault.jpg" : "/maxresdefault.jpg");
         metadata[i] = {
           date: episodes[i].date,
           description: episodes[i].description

@@ -15,7 +15,7 @@ import "../css/Footer.css";
 export default function Footer(props) {
   return (
     <footer className="footer mt-auto py-3">
-      <p>Peter Linder. 2020.</p>
+      <p>Peter Linder. 2021.</p>
       <div className="social-container">
         <MySocialMedia
           title="linkedin"
