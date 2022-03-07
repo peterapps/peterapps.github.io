@@ -68,6 +68,22 @@ const CloudyDayStudios = {
     'A collection of films created by me and my high school friends, most prominently the legendary Ruiqi "Ricky" Wang. For some reason we called ourselves Cloudy Day Studios.',
   episodes: [
     {
+      title: "Detective Ricky: Part 1",
+      url: "https://www.youtube.com/watch?v=t9aGu-fDqws",
+      path: "detective-ricky-part-1",
+      date: "Summer 2021",
+      description:
+        "Based on an idea I had in June 2019 which turned into a screenplay I wrote in November 2019 which was partially filmed in the summer of 2021. Part 2 should be more exciting but I don't know when it will happen. The audio's not great, so I included subtitles in the YouTube that should help."
+    },
+    {
+      title: "Bloopers! - Detective Ricky: Part 1",
+      url: "https://www.youtube.com/watch?v=ApqxsNSOfXE",
+      path: "detective-ricky-part-1-bloopers",
+      date: "Summer 2021",
+      description: "Ricky messes up a lot.",
+      sd: true
+    },
+    {
       title: "Detective Ricky - Teaser 1",
       url: "https://www.youtube.com/watch?v=5KrDG1h1-v0",
       path: "detective-ricky-teaser-1",
