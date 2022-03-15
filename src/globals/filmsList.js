@@ -1,3 +1,44 @@
+const MFly = {
+  title: "M-Fly",
+  path: "mfly",
+  description:
+    "Videos that I have made during my time on the project team M-Fly at the University of Michigan",
+  episodes: [
+    {
+      title: "M-Fly One Man Movie Trailer",
+      url: "https://www.youtube.com/watch?v=324JRO0tZHU",
+      path: "mfly-one-man-movie-trailer",
+      date: "Jan 9, 2021",
+      description: "Made in a fit of quarantine madness."
+    },
+    {
+      title: "M-Fly Lo-Fi",
+      url: "https://www.youtube.com/watch?v=Ei5jyw9I34Y",
+      path: "mfly-lofi",
+      date: "Oct 16, 2021",
+      description:
+        "A song with no real justification for its existence, except for possibly some subtle product placement."
+    },
+    {
+      title: "M-Fly Hype!",
+      url: "https://www.youtube.com/watch?v=d11YLjN7Qu8",
+      path: "mfly-hype",
+      date: "Sep 6, 2021",
+      description:
+        "Check out this montage of the M-Fly builds, test flights, and competitions, and get hyped!",
+      sd: true
+    },
+    {
+      title: "MAT-3 Test Flight",
+      url: "https://www.youtube.com/watch?v=6FO4goKWuIc",
+      path: "mat-3-test-flight",
+      date: "Feb 19, 2020",
+      description:
+        "My first video for M-Fly, just a montage of a test flight I was at with an interesting choice of music."
+    }
+  ]
+};
+
 const TheStoopidMuvy = {
   title: "The Stoopid Muvy",
   path: "stoopid",
@@ -556,13 +597,14 @@ const filmsList = {
     CloudyDayStudios,
     NJFilmSchoolShorts,
     MiscWithAlex,
-    Montages,
+    PetersPeeves,
+    MFly,
     CreationsWithZach,
     SchoolProjects,
-    SpanishProjects,
     MrFlap,
+    Montages,
     TheStoopidMuvy,
-    PetersPeeves,
+    SpanishProjects,
     MockCommercials,
     WillyOLaughlin
   ]
