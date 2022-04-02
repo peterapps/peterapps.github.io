@@ -5,6 +5,14 @@ const MFly = {
     "Videos that I have made during my time on the project team M-Fly at the University of Michigan",
   episodes: [
     {
+      title: "MAT 3.3 Hype Video",
+      url: "https://www.youtube.com/watch?v=Tu_pPhNLM_0",
+      path: "mat-3.3-hype",
+      date: "Mar 30, 2022",
+      description:
+        "Hype video for the MAT 3.3. I went 39 hours without sleep for this."
+    },
+    {
       title: "M-Fly One Man Movie Trailer",
       url: "https://www.youtube.com/watch?v=324JRO0tZHU",
       path: "mfly-one-man-movie-trailer",
