@@ -72,7 +72,7 @@ const TheStoopidMuvy = {
     {
       title: "S2E2: The Very Stoopid Muvy",
       url: "https://vimeo.com/210841251",
-      path: "s2e3",
+      path: "s2e2",
       date: "Summer, 2013",
       description: "Episode 2 of Season 2. Ha ha, I said tutu."
     },
