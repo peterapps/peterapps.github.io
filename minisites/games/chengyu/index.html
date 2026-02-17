@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chengyu Master (成语大师)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blob blob-1"></div>
+    <div class="background-blob blob-2"></div>
+    <div class="background-blob blob-3"></div>
+
+    <div class="app-container">
+        <button id="help-btn" class="icon-btn help-pos" aria-label="Game Rules">?</button>
+
+        <!-- Landing Screen -->
+        <section id="landing-screen" class="screen active">
+            <h1 class="title">成语大师</h1>
+            <p class="subtitle">Master the Art of Chinese Idioms</p>
+            <button id="start-btn" class="primary-btn">Start Quiz</button>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="score-board">Score: <span id="score">0</span></div>
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="question-card">
+                    <!-- Dynamic Content Here -->
+                </div>
+            </div>
+
+            <div id="feedback-area" class="feedback hidden">
+                <span id="feedback-icon"></span>
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="secondary-btn hidden">Next</button>
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen">
+            <h2>Quiz Complete!</h2>
+            <div class="final-score-container">
+                <span class="final-score-label">Your Score</span>
+                <span id="final-score" class="final-score-value">0</span>
+            </div>
+
+            <div id="summary-list" class="summary-container">
+                <!-- Summary items will be injected here -->
+            </div>
+
+            <button id="restart-btn" class="primary-btn">Play Again</button>
+        </section>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="help-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-help" class="close-btn">&times;</span>
+            <h2>How to Play</h2>
+
+            <div class="rule-section">
+                <h3><span class="icon">📝</span> Game Types</h3>
+                <ul>
+                    <li><strong>Meaning → Answer:</strong> Guess the Hanzi or Pinyin for the given definition.</li>
+                    <li><strong>Hanzi → Meaning:</strong> Find the correct figurative meaning for the given idiom.</li>
+                </ul>
+            </div>
+
+            <div class="rule-section">
+                <h3><span class="icon">🏆</span> Scoring Rules</h3>
+                <ul class="scoring-list">
+                    <li><span class="score-badge gold">10 pts</span> Correct Hanzi</li>
+                    <li><span class="score-badge silver">8 pts</span> Correct Pinyin (with tones)</li>
+                    <li><span class="score-badge bronze">5 pts</span> Correct Pinyin (no tones)</li>
+                </ul>
+            </div>
+
+            <div class="rule-section">
+                <h3><span class="icon">⌨️</span> Instructions</h3>
+                <p>Type your answer and press <strong>Enter</strong> or click <strong>Submit</strong>.</p>
+                <p>For pinyin, you can use numbers for tones (e.g., <em>shou3</em>).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
